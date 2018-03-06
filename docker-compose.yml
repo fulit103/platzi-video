@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  
+  platzimovie:
+    build: .
+    ports:
+      - "9000:9000"
+    volumes:
+      - .:/usr/src/app
+
+volumes:  
+  db_data:
+    external: true
